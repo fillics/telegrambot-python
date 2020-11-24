@@ -50,4 +50,12 @@ The first thing texted from a user is */start*, so we need to define what our bo
 if text == '/start':
             bot.sendMessage(chat_id, "Hi! Choose the sitcom to get the random quote.")
 ```
+Now the user can choose with the two commands.
+
+```
+elif text == '/friends':
+            bot.sendMessage(chat_id, "Hi! Choose the sitcom to get the random quote.")
+elif text == '/himym':
+            bot.sendMessage(chat_id, "Hi! Choose the sitcom to get the random quote.")
+```
 
