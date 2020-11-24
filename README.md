@@ -14,7 +14,7 @@ For this guide, I'll use a text editor and the command prompt to run the script.
 
 Then, you must have a Telegram account and then get the token to access the Telegram bot, using [@BotFather](https://web.telegram.org/#/im?p=@BotFather).
 
-![image](https://user-images.githubusercontent.com/24494773/100011405-f6628a80-2dd1-11eb-950f-a2ad677f4020.png)
+![Immagine](https://user-images.githubusercontent.com/24494773/100155376-7575c280-2ea7-11eb-8a0d-30a1624e92bb.png)
 
 Save the **token** because you'll need it later. 
 
