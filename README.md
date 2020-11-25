@@ -1,5 +1,5 @@
 # telegramBot-python
-How to create a Telegram Bot with Python. In this guide, I'll create a bot that gives it back a random quote from two json files.
+How to create a Telegram Bot with Python. In this guide, I'll create a bot that gives it back a random quote from two json files ([friends.py](friends.py) and [himym.py](himym.py)).
 The user can use only the following commands:
 * /start: to run the bot
 * /friends: to get a random Friends quote
