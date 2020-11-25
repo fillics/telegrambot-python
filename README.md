@@ -1,12 +1,16 @@
 # telegramBot-python
-How to create a Telegram Bot with Python. In this guide, I'll create a bot that gives it back a random quote from two json files ([friends.py](friends.py) and [himym.py](himym.py)).
+How to create a Telegram Bot with Python. In this guide, I'll create a bot that gives it back a random quote from two json files.
 The user can use only the following commands:
 * /start: to run the bot
 * /friends: to get a random Friends quote
 * /himym: to get a random How I met your mother quote
+* /github: to print the link to this guide
 
 ## Prerequisites
 To create this simple bot, it's recommended to know the Python fundamentals.
+
+## How does it work
+When the user wants to receive a quote, the bot will choose it randomly from [friends.json](friends.json) and [himym.json](himym.json). For sending messages, we'll use the Python library **telepot**.
 
 ## Getting started
 First of all, you need to install [Python](https://www.python.org/downloads/) and a text editor to code your bot. I suggest you to use [Sublime Text](https://www.sublimetext.com/) because it's my favourite one due to its minimalism, but every text editor/IDE is fine. 
@@ -54,8 +58,10 @@ Now the user can choose with the two commands.
 
 ```
 elif text == '/friends':
-            bot.sendMessage(chat_id, "Hi! Choose the sitcom to get the random quote.")
+            ** call the function to get the random quote **
 elif text == '/himym':
-            bot.sendMessage(chat_id, "Hi! Choose the sitcom to get the random quote.")
+            ** call the function to get the random quote **
+elif text == '/github':
+            bot.sendMessage(chat_id, "To check how this bot works: ")
 ```
 
