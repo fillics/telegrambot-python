@@ -34,34 +34,35 @@ Open the text editor/IDE and create a new project, saving it in the same folder 
 Now we're ready. First of all, we need to import all of modules we are going to use. 
 
 ```
-import sys, telepot, json, time, requests, os
+import sys, telepot, json, time, requests, os, random
 from telepot.loop import MessageLoop
 
 ```
 
-After that, let's define our *handle* function, to handle messages sent by users. The following code lines are to extract “headline” info about the message sent by users and to print them.
+After that, let's define our *handle* function, to handle messages sent by users. The following code lines are to extract “headline” info about the message sent by users.
 
 ```
 def handle(msg):
     content_type, chat_type, chat_id = telepot.glance(msg)
-    print(content_type, chat_type, chat_id)
-    pprint(msg)
+    
 ```
 
-The first thing texted from a user is */start*, so we need to define what our bot texts in this situation. 
+The first thing texted from a user is */start*, so we need to define what our bot does in this situation: it sends a welcome message .
 
 ```
 if text == '/start':
             bot.sendMessage(chat_id, "Hi! Choose the sitcom to get the random quote.")
 ```
-Now the user can choose with the two commands.
+Now the user can choose with the three following commands. /friends and /himym call the *RandomQuote* function that we are going to define.
 
 ```
 elif text == '/friends':
             ** call the function to get the random quote **
+            RandomQuote("Friends", chat_id)
 elif text == '/himym':
             ** call the function to get the random quote **
+            RandomQuote("Himym", chat_id)
 elif text == '/github':
-            bot.sendMessage(chat_id, "To check how this bot works: ")
+            bot.sendMessage(chat_id, "To know how this bot works: https://github.com/fillics/telegrambot-python")
 ```
 
