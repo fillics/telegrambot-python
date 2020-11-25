@@ -66,3 +66,27 @@ elif text == '/github':
             bot.sendMessage(chat_id, "To know how this bot works: https://github.com/fillics/telegrambot-python")
 ```
 
+Let's define the function RandomQuote that reads from the json files and sends a message that contains a random quote and the character.
+
+```
+def RandomQuote(sitcom, chat_id):
+	if sitcom == "Friends":
+		num = random.randint(0,19)
+		bot.sendMessage(chat_id, dataFriends[num]['quote'] + "\n" + "*" +
+			dataFriends[num]['character'] + "*", parse_mode= 'Markdown')
+
+	if sitcom == "Himym":
+		num = random.randint(0,42)
+		bot.sendMessage(chat_id, dataHimym[num]['quote'] + "\n" + "*" +
+			dataHimym[num]['character'] + "*", parse_mode= 'Markdown')
+```
+
+We are almost done. To start the bot and keep running it, we need to add the following lines and substitute INSERT_YOUR_TOKEN with the token obtained when we created the bot throught BotFather.
+
+```
+TOKEN = 'INSERT_YOUR_TOKEN'
+bot = telepot.Bot(TOKEN)
+MessageLoop(bot, handle).run_as_thread()
+while 1:
+  time.sleep(10)
+```
