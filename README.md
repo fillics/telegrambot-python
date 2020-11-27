@@ -90,3 +90,6 @@ MessageLoop(bot, handle).run_as_thread()
 while 1:
   time.sleep(10)
 ```
+
+To run the bot, go to the Command Prompt and using the command `cd`, moving into the folder where you saved your telegramBot.py and the two json files.
+After that, type `python telegramBot.py`. If the terminal prints "Listening", the bot works!
