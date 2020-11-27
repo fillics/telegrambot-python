@@ -93,3 +93,4 @@ while 1:
 
 To run the bot, go to the Command Prompt and using the command `cd`, moving into the folder where you saved your telegramBot.py and the two json files.
 After that, type `python telegramBot.py`. If the terminal prints "Listening", the bot works!
+![image](https://user-images.githubusercontent.com/24494773/100470775-2ca55000-30d9-11eb-8184-f68032187e79.png)
