@@ -6,7 +6,7 @@ The user can use only the following commands:
 * /himym: to get a random How I met your mother quote
 * /github: to print the link to this guide
 
-The bot created is [@SitComBot](https://web.telegram.org/#/im?p=@randomsitcomquotesBot).
+The bot created is [@SitComBot](https://web.telegram.org/#/im?p=@randomsitcomquotesBot). In the last bot's version, I've added two buttons for the two sitcoms.
 ## Prerequisites
 To create this simple bot, it's recommended to know the Python fundamentals.
 
